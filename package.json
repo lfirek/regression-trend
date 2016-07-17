@@ -3,11 +3,8 @@
   "version": "0.0.0",
   "description": "Library for creating regression and trend from requested data set.",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec"
   },
   "repository": {
     "type": "git",
@@ -24,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/lfirek/regression-trend/issues"
   },
-  "homepage": "https://github.com/lfirek/regression-trend#readme"
+  "homepage": "https://github.com/lfirek/regression-trend#readme",
+  "devDependencies": {
+    "coveralls": "^2.11.11",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "should": "^9.0.2"
+  }
 }
