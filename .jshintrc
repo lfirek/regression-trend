@@ -1,8 +1,10 @@
 {
   "node":      true,
+  "mocha":true,
   "eqeqeq":    true,
   "strict":    true,
   "undef":     true,
   "unused":    true,
-  "lastsemic": true
+  "lastsemic": true,
+  "esversion": 6
 }
