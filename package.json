@@ -1,0 +1,28 @@
+{
+  "name": "regression-trend",
+  "version": "0.0.0",
+  "description": "Library for creating regression and trend from requested data set.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfirek/regression-trend.git"
+  },
+  "keywords": [
+    "regression",
+    "trend",
+    "statistics",
+    "math"
+  ],
+  "author": "Lukasz Firek <lukasz.firek@cashbill.pl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lfirek/regression-trend/issues"
+  },
+  "homepage": "https://github.com/lfirek/regression-trend#readme"
+}
