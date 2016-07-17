@@ -55,12 +55,12 @@ Try not use zero value for point but if you need just do it
 
 You can use data not in order
 
-``
+````
 var regression = require('regression-trend');
 var inputData = [[1,1],[2,5],[3,6],[5,20],[11,50]];
 
 var output = regression.generate(inputData);
-``
+````
 
 You can create predictable values for selected points
 
