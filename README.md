@@ -43,13 +43,13 @@ Try not use zero value for point but if you need just do it
 
 ### Example output data
 
-``json
+````
 { 
   equation: { a: -1, b: 1 },
   points: [ [ 1, 0 ], [ 2, 1 ], [ 3, 2 ], [ 4, 3 ], [ 5, 4 ] ],
   pattern: 'y = -1 + 1 * x'
 }
-``
+````
 
 ### Generate regression and trend for requested point
 
