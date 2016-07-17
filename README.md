@@ -54,6 +54,7 @@ Try not use zero value for point but if you need just do it
 ### Generate regression and trend for requested point
 
 You can use data not in order
+
 ``
 var regression = require('regression-trend');
 var inputData = [[1,1],[2,5],[3,6],[5,20],[11,50]];
@@ -62,6 +63,7 @@ var output = regression.generate(inputData);
 ``
 
 You can create predictable values for selected points
+
 ``
 var value = regression.trend(output.equation,10);
 ``
@@ -71,11 +73,13 @@ var value = regression.trend(output.equation,10);
 You can create regression for another type default type of regression is linear
 
 List of all types is in
+
 ``
 regression.TYPES
 ``
 
 Setting other type than default
+
 ``
 regression.setType(regression.TYPES.linear);
 ``
