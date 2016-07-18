@@ -1,6 +1,6 @@
 {
   "name": "regression-trend",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Library for creating regression and trend from requested data set.",
   "main": "index.js",
   "scripts": {
