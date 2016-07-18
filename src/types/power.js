@@ -1,7 +1,9 @@
 "use strict";
 
 function generate(data) {
-    let equation, n, sumX, sumY, sumXY, sumPowX;
+    let equation, n, sumX, sumY, sumXY, sumPowX, pointsArray;
+
+    pointsArray = [];
 
     equation = {
         a: 0,
@@ -13,12 +15,12 @@ function generate(data) {
 
     for (i = 0; i < data.length; i++) {
 
-        if (data[i][1] !== null && data[i][1] !== 0 && data[i][0] !== 0 ) {
+        if (data[i].y !== null && data[i].y !== 0 && data[i].x !== 0) {
             n++;
-            sumX += Math.log(data[i][0]);
-            sumY += Math.log(data[i][1]);
-            sumXY += Math.log(data[i][0]) * Math.log(data[i][1]);
-            sumPowX += Math.pow(Math.log(data[i][0]), 2);
+            sumX += Math.log(data[i].x);
+            sumY += Math.log(data[i].y);
+            sumXY += Math.log(data[i].x) * Math.log(data[i].y);
+            sumPowX += Math.pow(Math.log(data[i].x), 2);
         }
     }
 
@@ -26,12 +28,17 @@ function generate(data) {
     equation.a = Math.pow(Math.E, (sumY - equation.b * sumX) / n);
 
     for (i = 0; i < data.length; i++) {
-        data[i][1] = trend(equation, data[i][0]);
+        pointsArray.push(
+            {
+                x: data[i].x,
+                y: trend(equation, data[i].x)
+            }
+        );
     }
 
     return {
         equation: equation,
-        points: data,
+        points: pointsArray,
         pattern: 'y = ' + equation.a + ' * x^' + equation.b
     };
 }

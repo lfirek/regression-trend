@@ -23,6 +23,7 @@ describe("REGRESSION - LINEAR", function () {
     it("generate", function () {
 
         regression = linear.generate(data);
+        console.log(regression);
         regression.should.have.property('equation');
         regression.should.have.property('points');
         regression.should.have.property('pattern');

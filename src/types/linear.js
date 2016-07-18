@@ -1,8 +1,10 @@
 "use strict";
 
 function generate(data) {
-    let equation, n, sumX, sumY, sumXY, sumPowX, aveY, aveX;
+    let equation, n, sumX, sumY, sumXY, sumPowX, aveY, aveX, pointsArray;
 
+    pointsArray = [];
+    
     equation = {
         a: 0,
         b: 0
@@ -13,13 +15,12 @@ function generate(data) {
 
     for (i = 0; i < data.length; i++) {
 
-        if (data[i][1] !== null) {
+        if (data[i].y !== null) {
             n++;
-            sumX += data[i][0];
-            sumY += data[i][1];
-            sumXY += data[i][0] * data[i][1];
-            sumPowX += Math.pow(data[i][0],2);
-
+            sumX += data[i].x;
+            sumY += data[i].y;
+            sumXY += data[i].x * data[i].y;
+            sumPowX += Math.pow(data[i].x,2);
         }
     }
     aveY = sumY / n;
@@ -28,7 +29,12 @@ function generate(data) {
     equation.a = aveY - equation.b * aveX;
 
     for (i = 0; i < data.length; i++) {
-        data[i][1] = trend(equation, data[i][0]);
+        pointsArray.push(
+            {
+                x: data[i].x,
+                y: trend(equation, data[i].y)
+            }
+        );
     }
 
     return {
