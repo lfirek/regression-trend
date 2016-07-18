@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/lfirek/regression-trend.svg?branch=master)](https://travis-ci.org/lfirek/regression-trend)
+[![Coverage Status](https://coveralls.io/repos/github/lfirek/regression-trend/badge.svg?branch=master)](https://coveralls.io/github/lfirek/regression-trend?branch=master)
 # Regression Trend
 Library for creating regression and trend from requested data set.
 
