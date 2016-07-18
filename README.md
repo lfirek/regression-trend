@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/lfirek/regression-trend.svg?branch=master)](https://travis-ci.org/lfirek/regression-trend)
 # Regression Trend
 Library for creating regression and trend from requested data set.
 
