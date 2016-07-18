@@ -3,6 +3,8 @@
 # Regression Trend
 Library for creating regression and trend from requested data set.
 
+[![Regression Trend on NPM](https://nodei.co/npm/regression-trend.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/regression-trend)
+
 ## Supported Regression Types
 
 * Linear
