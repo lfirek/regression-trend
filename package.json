@@ -2,7 +2,7 @@
   "name": "regression-trend",
   "version": "1.0.3",
   "description": "Library for creating regression and trend from requested data set.",
-  "main": "index.js",
+  "main": "src/regression.js",
   "scripts": {
     "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
