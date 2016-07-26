@@ -39,7 +39,7 @@ function generate(data) {
 
     return {
         equation: equation,
-        points: data,
+        points: pointsArray,
         pattern: "y = " + equation.a + " + " + equation.b + " * x"
     };
 }
